@@ -60,14 +60,28 @@ und die Finger der Faust die Richtung des Feldes zeigen.
     \caption{Magnetfeld im geraden Leiter und Linke-Faust-Regel}
 \end{figure}
 
-\subsection{Drahtrahmen im homogenen Magnetfeld}
+
+\subsection{Homogene Magnetfelder}
+Im Inneren einer langen Spule herrscht ein Homogenenes Magnetfeld, in dem also die magnetische Flussdichte
+unabhängig von Ort konstant ist.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{bilder/MagnetfeldSpule.png}
+    \caption{}
+\end{figure}
 
 
 \section{Die Magnetische Flussdichte ($B$)}
 Die magnetische Flussdichte ist die elektrische Feldstärke der magnetischen Felder.
 Manchmal wird sie auch magnetische Felddichte genannt. Sie kann errechnet werden durch:
 $$B = \dfrac{F}{I \cdot l}$$
-Dabei gibt $l$ die Länge des Leiters an. Die Eiheit der magnetischen Flussdichte heißt Tesla ($T$).
+Dabei gibt $l$ die Länge des Leiters an. Die Eiheit der magnetischen Flussdichte heißt Tesla ($T$).\\
+
+Um die magnetische Flussdichte eines Homogenen Magnetfeldes zu errechnen benötigt man die magnetische 
+Feldkonstnante $\mu$ ($=1,257E-6 \frac{Vs}{Am}$). Damit errechnet sich die Flussdichte mit:
+$$B = \mu \cdot \dfrac{N}{l} \cdot I$$
+Wobei $N$ die Anzahl der Windungen und $l$ die Läbge der Spule angibt.
 
 
 \section{Die Lorentzkraft}
@@ -103,6 +117,35 @@ Steht ein solcher Leiter nicht orthogonal zum Magnetfeld wird die wirksame Leite
 genutzt. Diese wird berechnet durch:
 $$l_w = l \cdot cos(\alpha)$$
 $\alpha$ ist der Winke zwischen dem theoretischem orthogonalen Leiter und dem Tatsächlichen.
+
+
+\section{Der Hall-Effekt}
+Betrachten wir einen dicken Leiter, wie etwa ein Metallrohr, an den eine Spannung angelegt ist und der
+von einem Magnetfeld durchsetzt ist. Dieser besitzt die Breite w und die Höhe t. $B$ zeigt in $x_1$-Richtung
+und die Lorentzkraft (hier: $F_M$) nach unten.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{bilder/Hall-effect.png}
+    \caption{Der Hall-Effekt in einem elektrischen Leiter}
+    \label{hall-effekt}
+\end{figure}
+
+Durch die Lorentzkraft ändert sich die Elektonenverteilung im Leiter. Die Elektronen bewegen sich in Richtung
+dieser Kraft. Die Folge davon ist ein Elektrisches Feld, entstanden durch diesen Ladungsunterschied.
+Die daraus resultierende elektrische Kraft ($F_E$) besitzt den selben Betrag, wie die Lorentzkraft,
+zeigt aber in die entgegengesetzte Richtung. Die Kräfte heben sich daher gegenseitig auf und die 
+Elektronen bewegen sich geradlinig durch den Leiter, ohne vom Magnetfeld gestört zu werden.
+
+
+\subsection{Die Hall-Spannung}
+Die Spannung des Ladungsunterschieds, welcher durch die Lorentzkraft entsteht, lässt sich messen und errechen.
+Die Formel dafür ist:
+$$U_H = R_H \cdot \dfrac{I \cdot B}{d}$$
+Mir $d$ für die Breite des Leiter (parallel zu den Feldlinien) und $R_H$ für die Hall-Konstante.
+Die Hall-Konstante ist eine materialabhängige Konstante.
+
+
 
 
 
